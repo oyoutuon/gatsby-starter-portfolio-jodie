@@ -7,24 +7,26 @@ module.exports = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-jodie/gatsby-config.js
-    siteTitle: `Jodie`,
-    siteTitleAlt: `Jodie - Gatsby Starter Portfolio`,
-    siteHeadline: `Jodie - Gatsby Theme from @lekoarts`,
-    siteUrl: `https://jodie.lekoarts.de`,
-    siteDescription: `Image-heavy photography portfolio with colorful accents & customizable pages. Includes adaptive image grids powered by CSS grid and automatic image integration into projects.`,
+    siteTitle: `Shumijin`,
+    siteTitleAlt: `Shumijin - Hobbyist Artist Portfolio`,
+    siteHeadline: `Shumijin - Hobbyist Artist Portfolio`,
+    siteUrl: `https://shumijin.me`,
+    siteDescription: `Shumijin's art portfolio and links.`,
     siteLanguage: `en`,
     siteImage: `/banner.jpg`,
-    author: `@lekoarts_de`,
+    author: `@shumijin`,
   },
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-jodie`,
       // See the theme's README for all available options
       options: {
+        homepageProjectLimit: 10,
         navigation: [
-          { name: `Projects`, slug: `/projects` },
-          { name: `Art`, slug: `/art` },
-          { name: `About`, slug: `/about` },
+          { name: `Instagram`, slug: `/instagram` },
+          { name: `Deviantart`, slug: `/deviantart` },
+          { name: `Youtube`, slug: `/youtube` },
+          { name: `Redbubble`, slug: `/redbubble` }
         ],
       },
     },
